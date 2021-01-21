@@ -103,6 +103,12 @@ class _MyHomePageState extends State<MyHomePage> {
           Text(
             "Gabriel Akinyosoye",
             style: TextStyle(letterSpacing: 2, fontSize: 30),
+          ),
+          IconButton(
+            icon: Icon(Icons.mail),
+            onPressed: null,
+            color: Colors.amber,
+            iconSize: 35,
           )
         ],
       ),
