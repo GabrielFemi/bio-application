@@ -107,43 +107,34 @@ class _MyHomePageState extends State<MyHomePage> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              IconButton(
-                icon: Icon(Icons.mail),
-                onPressed: null,
-                color: Colors.amber,
-                iconSize: 30,
+              CircleAvatar(
+                radius: 30,
+                backgroundColor: Colors.red,
+                child: IconButton(
+                  icon: Icon(
+                    Icons.mail,
+                    color: Colors.white,
+                  ),
+                  onPressed: () {
+                    //
+                  },
+                ),
               ),
-              IconButton(
-                icon: Icon(Icons.mail),
-                onPressed: null,
-                color: Colors.amber,
-                iconSize: 30,
-              ),
-              IconButton(
-                icon: Icon(Icons.mail),
-                onPressed: null,
-                color: Colors.amber,
-                iconSize: 30,
+              CircleAvatar(
+                radius: 30,
+                backgroundColor: Colors.black,
+                child: IconButton(
+                  icon: Icon(
+                    Icons.search,
+                    color: Colors.white,
+                  ),
+                  onPressed: () {
+                    //
+                  },
+                ),
               )
             ],
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              IconButton(
-                icon: Icon(Icons.mail),
-                onPressed: null,
-                color: Colors.amber,
-                iconSize: 30,
-              ),
-              IconButton(
-                icon: Icon(Icons.add_call),
-                onPressed: null,
-                color: Colors.amber,
-                iconSize: 30,
-              )
-            ],
-          )
         ],
       ),
     ));
