@@ -91,7 +91,16 @@ class _MyHomePageState extends State<MyHomePage> {
         // axis because Columns are vertical (the cross axis would be
         // horizontal).
         mainAxisAlignment: MainAxisAlignment.center,
-        children: [Image.asset("images/gabriel.jpg")],
+        children: [
+          new Container(
+              width: 190.0,
+              height: 190.0,
+              decoration: new BoxDecoration(
+                  shape: BoxShape.circle,
+                  image: new DecorationImage(
+                      fit: BoxFit.fill,
+                      image: new AssetImage("images/gabriel.jpg")))),
+        ],
       ),
     ));
   }
