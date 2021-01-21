@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 void main() {
   runApp(MyApp());
@@ -122,10 +123,23 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               CircleAvatar(
                 radius: 30,
+                backgroundColor: Colors.blue,
+                child: IconButton(
+                  icon: FaIcon(
+                    FontAwesomeIcons.facebook,
+                    color: Colors.white,
+                  ),
+                  onPressed: () {
+                    //
+                  },
+                ),
+              ),
+              CircleAvatar(
+                radius: 30,
                 backgroundColor: Colors.black,
                 child: IconButton(
-                  icon: Icon(
-                    Icons.search,
+                  icon: FaIcon(
+                    FontAwesomeIcons.github,
                     color: Colors.white,
                   ),
                   onPressed: () {
@@ -135,6 +149,37 @@ class _MyHomePageState extends State<MyHomePage> {
               )
             ],
           ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              CircleAvatar(
+                radius: 30,
+                backgroundColor: Colors.pinkAccent,
+                child: IconButton(
+                  icon: FaIcon(
+                    FontAwesomeIcons.instagram,
+                    color: Colors.white,
+                  ),
+                  onPressed: () {
+                    //
+                  },
+                ),
+              ),
+              CircleAvatar(
+                radius: 30,
+                backgroundColor: Colors.blue,
+                child: IconButton(
+                  icon: FaIcon(
+                    FontAwesomeIcons.twitter,
+                    color: Colors.white,
+                  ),
+                  onPressed: () {
+                    //
+                  },
+                ),
+              )
+            ],
+          )
         ],
       ),
     ));
