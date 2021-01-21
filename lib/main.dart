@@ -149,6 +149,37 @@ class _MyHomePageState extends State<MyHomePage> {
               )
             ],
           ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              CircleAvatar(
+                radius: 30,
+                backgroundColor: Colors.pinkAccent,
+                child: IconButton(
+                  icon: FaIcon(
+                    FontAwesomeIcons.instagram,
+                    color: Colors.white,
+                  ),
+                  onPressed: () {
+                    //
+                  },
+                ),
+              ),
+              CircleAvatar(
+                radius: 30,
+                backgroundColor: Colors.blue,
+                child: IconButton(
+                  icon: FaIcon(
+                    FontAwesomeIcons.twitter,
+                    color: Colors.white,
+                  ),
+                  onPressed: () {
+                    //
+                  },
+                ),
+              )
+            ],
+          )
         ],
       ),
     ));
