@@ -127,6 +127,23 @@ class _MyHomePageState extends State<MyHomePage> {
               )
             ],
           ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              IconButton(
+                icon: Icon(Icons.mail),
+                onPressed: null,
+                color: Colors.amber,
+                iconSize: 30,
+              ),
+              IconButton(
+                icon: Icon(Icons.mail),
+                onPressed: null,
+                color: Colors.amber,
+                iconSize: 30,
+              )
+            ],
+          )
         ],
       ),
     ));
