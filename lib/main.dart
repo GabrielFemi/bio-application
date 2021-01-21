@@ -9,6 +9,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Bio application',
       theme: ThemeData(
         // This is the theme of your application.
@@ -100,6 +101,10 @@ class _MyHomePageState extends State<MyHomePage> {
                   image: new DecorationImage(
                       fit: BoxFit.fill,
                       image: new AssetImage("images/gabriel.jpg")))),
+          Text(
+            "Gabriel Akinyosoye",
+            style: TextStyle(letterSpacing: 2, fontSize: 30),
+          )
         ],
       ),
     ));
