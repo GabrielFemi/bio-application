@@ -125,8 +125,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 radius: 30,
                 backgroundColor: Colors.black,
                 child: IconButton(
-                  icon: Icon(
-                    Icons.search,
+                  icon: FaIcon(
+                    FontAwesomeIcons.facebook,
                     color: Colors.white,
                   ),
                   onPressed: () {
