@@ -97,6 +97,13 @@ class _MyHomePageState extends State<MyHomePage> {
               width: 190.0,
               height: 190.0,
               decoration: new BoxDecoration(
+                  // boxShadow: [
+                  //   BoxShadow(
+                  //       color: Colors.grey.withOpacity(0.8),
+                  //       spreadRadius: 2,
+                  //       blurRadius: 10,
+                  //       offset: Offset(0, 7))
+                  // ],
                   shape: BoxShape.circle,
                   image: new DecorationImage(
                       fit: BoxFit.fill,
