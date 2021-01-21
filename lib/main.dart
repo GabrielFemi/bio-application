@@ -123,10 +123,23 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               CircleAvatar(
                 radius: 30,
-                backgroundColor: Colors.black,
+                backgroundColor: Colors.blue,
                 child: IconButton(
                   icon: FaIcon(
                     FontAwesomeIcons.facebook,
+                    color: Colors.white,
+                  ),
+                  onPressed: () {
+                    //
+                  },
+                ),
+              ),
+              CircleAvatar(
+                radius: 30,
+                backgroundColor: Colors.black,
+                child: IconButton(
+                  icon: FaIcon(
+                    FontAwesomeIcons.github,
                     color: Colors.white,
                   ),
                   onPressed: () {
