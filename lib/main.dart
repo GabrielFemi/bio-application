@@ -108,13 +108,11 @@ class _MyHomePageState extends State<MyHomePage> {
                   image: new DecorationImage(
                       fit: BoxFit.fill,
                       image: new AssetImage("images/gabriel.jpg")))),
-          Text(
-            "Gabriel Akinyosoye",
-            style: TextStyle(letterSpacing: 2, fontSize: 30),
-          ),
-          Text(
-            "I am a programmer",
-            style: TextStyle(color: Colors.red),
+          new Container(
+            child: Text(
+              "Gabriel Akinyosoye",
+              style: TextStyle(letterSpacing: 2, fontSize: 30),
+            ),
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
