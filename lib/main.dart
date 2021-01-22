@@ -112,6 +112,10 @@ class _MyHomePageState extends State<MyHomePage> {
             "Gabriel Akinyosoye",
             style: TextStyle(letterSpacing: 2, fontSize: 30),
           ),
+          Text(
+            "I am a programmer",
+            style: TextStyle(color: Colors.red),
+          ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
