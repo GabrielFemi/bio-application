@@ -1,3 +1,4 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -73,125 +74,127 @@ class _MyHomePageState extends State<MyHomePage> {
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
     return Scaffold(
+        backgroundColor: Colors.black,
         body: Center(
-      // Center is a layout widget. It takes a single child and positions it
-      // in the middle of the parent.
-      child: Column(
-        // Column is also a layout widget. It takes a list of children and
-        // arranges them vertically. By default, it sizes itself to fit its
-        // children horizontally, and tries to be as tall as its parent.
-        //
-        // Invoke "debug painting" (press "p" in the console, choose the
-        // "Toggle Debug Paint" action from the Flutter Inspector in Android
-        // Studio, or the "Toggle Debug Paint" command in Visual Studio Code)
-        // to see the wireframe for each widget.
-        //
-        // Column has various properties to control how it sizes itself and
-        // how it positions its children. Here we use mainAxisAlignment to
-        // center the children vertically; the main axis here is the vertical
-        // axis because Columns are vertical (the cross axis would be
-        // horizontal).
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          new Container(
-              width: 190.0,
-              height: 190.0,
-              decoration: new BoxDecoration(
-                  // boxShadow: [
-                  //   BoxShadow(
-                  //       color: Colors.grey.withOpacity(0.8),
-                  //       spreadRadius: 2,
-                  //       blurRadius: 10,
-                  //       offset: Offset(0, 7))
-                  // ],
-                  shape: BoxShape.circle,
-                  image: new DecorationImage(
-                      fit: BoxFit.fill,
-                      image: new AssetImage("images/gabriel.jpg")))),
-          new Container(
-            margin: const EdgeInsets.all(12.0),
-            child: Text(
-              "Gabriel Akinyosoye",
-              style: TextStyle(letterSpacing: 2, fontSize: 30),
-            ),
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          // Center is a layout widget. It takes a single child and positions it
+          // in the middle of the parent.
+          child: Column(
+            // Column is also a layout widget. It takes a list of children and
+            // arranges them vertically. By default, it sizes itself to fit its
+            // children horizontally, and tries to be as tall as its parent.
+            //
+            // Invoke "debug painting" (press "p" in the console, choose the
+            // "Toggle Debug Paint" action from the Flutter Inspector in Android
+            // Studio, or the "Toggle Debug Paint" command in Visual Studio Code)
+            // to see the wireframe for each widget.
+            //
+            // Column has various properties to control how it sizes itself and
+            // how it positions its children. Here we use mainAxisAlignment to
+            // center the children vertically; the main axis here is the vertical
+            // axis because Columns are vertical (the cross axis would be
+            // horizontal).
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              CircleAvatar(
-                radius: 30,
-                backgroundColor: Colors.red,
-                child: IconButton(
-                  icon: Icon(
-                    Icons.mail,
-                    color: Colors.white,
-                  ),
-                  onPressed: () {
-                    //
-                  },
+              new Container(
+                  width: 190.0,
+                  height: 190.0,
+                  decoration: new BoxDecoration(
+                      // boxShadow: [
+                      //   BoxShadow(
+                      //       color: Colors.grey.withOpacity(0.8),
+                      //       spreadRadius: 2,
+                      //       blurRadius: 10,
+                      //       offset: Offset(0, 7))
+                      // ],
+                      shape: BoxShape.circle,
+                      image: new DecorationImage(
+                          fit: BoxFit.fill,
+                          image: new AssetImage("images/gabriel.jpg")))),
+              new Container(
+                margin: const EdgeInsets.all(12.0),
+                child: Text(
+                  "Gabriel Akinyosoye",
+                  style: TextStyle(
+                      letterSpacing: 2, fontSize: 30, color: Colors.white),
                 ),
               ),
-              CircleAvatar(
-                radius: 30,
-                backgroundColor: Colors.blue,
-                child: IconButton(
-                  icon: FaIcon(
-                    FontAwesomeIcons.facebook,
-                    color: Colors.white,
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  CircleAvatar(
+                    radius: 30,
+                    backgroundColor: Colors.red,
+                    child: IconButton(
+                      icon: Icon(
+                        Icons.mail,
+                        color: Colors.white,
+                      ),
+                      onPressed: () {
+                        print(FontAwesomeIcons.accusoft);
+                      },
+                    ),
                   ),
-                  onPressed: () {
-                    //
-                  },
-                ),
+                  CircleAvatar(
+                    radius: 30,
+                    backgroundColor: Colors.blue,
+                    child: IconButton(
+                      icon: FaIcon(
+                        FontAwesomeIcons.facebook,
+                        color: Colors.white,
+                      ),
+                      onPressed: () {
+                        //
+                      },
+                    ),
+                  ),
+                  CircleAvatar(
+                    radius: 30,
+                    backgroundColor: Colors.black,
+                    child: IconButton(
+                      icon: FaIcon(
+                        FontAwesomeIcons.github,
+                        color: Colors.white,
+                      ),
+                      onPressed: () {
+                        //
+                      },
+                    ),
+                  )
+                ],
               ),
-              CircleAvatar(
-                radius: 30,
-                backgroundColor: Colors.black,
-                child: IconButton(
-                  icon: FaIcon(
-                    FontAwesomeIcons.github,
-                    color: Colors.white,
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  CircleAvatar(
+                    radius: 30,
+                    backgroundColor: Colors.pinkAccent,
+                    child: IconButton(
+                      icon: FaIcon(
+                        FontAwesomeIcons.instagram,
+                        color: Colors.white,
+                      ),
+                      onPressed: () {
+                        //
+                      },
+                    ),
                   ),
-                  onPressed: () {
-                    //
-                  },
-                ),
+                  CircleAvatar(
+                    radius: 30,
+                    backgroundColor: Colors.blue,
+                    child: IconButton(
+                      icon: FaIcon(
+                        FontAwesomeIcons.twitter,
+                        color: Colors.white,
+                      ),
+                      onPressed: () {
+                        //
+                      },
+                    ),
+                  )
+                ],
               )
             ],
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              CircleAvatar(
-                radius: 30,
-                backgroundColor: Colors.pinkAccent,
-                child: IconButton(
-                  icon: FaIcon(
-                    FontAwesomeIcons.instagram,
-                    color: Colors.white,
-                  ),
-                  onPressed: () {
-                    //
-                  },
-                ),
-              ),
-              CircleAvatar(
-                radius: 30,
-                backgroundColor: Colors.blue,
-                child: IconButton(
-                  icon: FaIcon(
-                    FontAwesomeIcons.twitter,
-                    color: Colors.white,
-                  ),
-                  onPressed: () {
-                    //
-                  },
-                ),
-              )
-            ],
-          )
-        ],
-      ),
-    ));
+        ));
   }
 }
