@@ -109,6 +109,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       fit: BoxFit.fill,
                       image: new AssetImage("images/gabriel.jpg")))),
           new Container(
+            margin: const EdgeInsets.all(12.0),
             child: Text(
               "Gabriel Akinyosoye",
               style: TextStyle(letterSpacing: 2, fontSize: 30),
