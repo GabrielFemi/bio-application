@@ -157,11 +157,11 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                   CircleAvatar(
                     radius: 30,
-                    backgroundColor: Colors.white,
+                    backgroundColor: Colors.black,
                     child: IconButton(
                       icon: FaIcon(
                         FontAwesomeIcons.github,
-                        color: Colors.black,
+                        color: Colors.white,
                       ),
                       onPressed: () {
                         //
