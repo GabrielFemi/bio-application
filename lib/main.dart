@@ -123,7 +123,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Text(
                   "Gabriel Akinyosoye",
                   style: TextStyle(
-                      letterSpacing: 2, fontSize: 30, color: Colors.white),
+                      letterSpacing: 2, fontSize: 30, color: Colors.black),
                 ),
               ),
               Row(
