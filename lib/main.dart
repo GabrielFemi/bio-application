@@ -75,6 +75,15 @@ class _MyHomePageState extends State<MyHomePage> {
     // than having to individually change instances of widgets.
     return Scaffold(
         backgroundColor: Colors.black,
+        bottomNavigationBar: BottomNavigationBar(
+          currentIndex: 0,
+          items: [
+            BottomNavigationBarItem(
+                icon: new FaIcon(FontAwesomeIcons.home), label: "Home"),
+            BottomNavigationBarItem(
+                icon: new FaIcon(FontAwesomeIcons.peopleArrows), label: "About")
+          ],
+        ),
         body: Center(
           // Center is a layout widget. It takes a single child and positions it
           // in the middle of the parent.
